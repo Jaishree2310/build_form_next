@@ -6,13 +6,17 @@ interface PreviewFieldInputProps {
   field: FormField;
   value: any;
   onChange: (value: any) => void;
+  error?: string;
 }
 
 export const PreviewFieldInput: React.FC<PreviewFieldInputProps> = ({ 
   field, 
   value, 
-  onChange 
+  onChange,
+  error 
 }) => {
+  const inputClassName = `h-8 ${error ? 'border-red-500 focus:ring-red-500' : ''}`;
+  
   switch (field.type) {
     case 'single':
       return (
@@ -20,7 +24,7 @@ export const PreviewFieldInput: React.FC<PreviewFieldInputProps> = ({
           type="text"
           value={value || ''}
           onChange={(e) => onChange(e.target.value)}
-          className="h-8"
+          className={inputClassName}
         />
       );
     case 'long':
@@ -29,7 +33,7 @@ export const PreviewFieldInput: React.FC<PreviewFieldInputProps> = ({
           type="text"
           value={value || ''}
           onChange={(e) => onChange(e.target.value)}
-          className="min-h-[100px]"
+          className={`min-h-[100px] ${error ? 'border-red-500 focus:ring-red-500' : ''}`}
         />
       );
     case 'radio':
@@ -42,8 +46,14 @@ export const PreviewFieldInput: React.FC<PreviewFieldInputProps> = ({
                 checked={value === option}
                 onChange={() => onChange(option)}
                 id={`${field.id}-${index}`}
+                className={error ? 'text-red-500' : ''}
               />
-              <label htmlFor={`${field.id}-${index}`}>{option}</label>
+              <label 
+                htmlFor={`${field.id}-${index}`}
+                className={error ? 'text-red-500' : ''}
+              >
+                {option}
+              </label>
             </div>
           ))}
         </div>
@@ -54,7 +64,7 @@ export const PreviewFieldInput: React.FC<PreviewFieldInputProps> = ({
           type="url"
           value={value || ''}
           onChange={(e) => onChange(e.target.value)}
-          className="h-8"
+          className={inputClassName}
         />
       );
     case 'date':
@@ -63,7 +73,7 @@ export const PreviewFieldInput: React.FC<PreviewFieldInputProps> = ({
           type="date"
           value={value || ''}
           onChange={(e) => onChange(e.target.value)}
-          className="h-8"
+          className={inputClassName}
         />
       );
     default:

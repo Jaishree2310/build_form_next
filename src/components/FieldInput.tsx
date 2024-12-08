@@ -25,41 +25,41 @@ export const FieldInput: React.FC<FieldInputProps> = ({ field, onUpdate }) => {
           <Input type="textarea" placeholder="" className="min-h-[100px] bg-gray-200 border-gray-300" disabled />
         </div>
       );
-    case 'radio':
-      return (
-        <div className="space-y-2">
-          {field.options?.map((option, index) => (
-            <div key={index} className="flex items-center space-x-2">
-              {field.type === 'radio' && <input type="radio" disabled />}
-              <Input
-             className='h-8 p-2' 
-                value={option} 
-                onChange={(e) => {
-                  const newOptions = [...(field.options || [])];
-                  newOptions[index] = e.target.value;
-                  onUpdate({ ...field, options: newOptions });
-                }}
-              />
-              {
-                // add + button on last element
-                index === field.options?.length!! - 1 && (
-                  <Button 
-                    className='border-none'
-                    variant="ghost" 
-                    size="sm"
-                    onClick={() => {
-                      const newOptions = [...(field.options || []), 'Option'];
-                      onUpdate({ ...field, options: newOptions });
-                    }}
-                  >
-                    <Plus className="mr-2 h-4 w-4" />
-                  </Button>
-                )
-              }
-            </div>
-          ))}
-        </div>
-      );
+      case 'radio':
+        return (
+          <div className="space-y-2">
+            {field.options?.map((option, index) => (
+              <div key={index} className="flex items-center space-x-2">
+                {field.type === 'radio' && <input type="radio" disabled />}
+                <Input
+                  className='h-8 p-2' 
+                  value={option} 
+                  onChange={(e) => {
+                    const newOptions = [...(field.options || [])];
+                    newOptions[index] = e.target.value;
+                    onUpdate({ ...field, options: newOptions });
+                  }}
+                />
+                {
+                  // add + button on last element
+                  index === field.options?.length!! - 1 && (
+                    <Button 
+                      className='border-none'
+                      variant="ghost" 
+                      size="sm"
+                      onClick={() => {
+                        const newOptions = [...(field.options || []), `Option ${field.options?.length + 1}`];
+                        onUpdate({ ...field, options: newOptions });
+                      }}
+                    >
+                      <Plus className="mr-2 h-4 w-4" />
+                    </Button>
+                  )
+                }
+              </div>
+            ))}
+          </div>
+        );
     case 'url':
       return (
         <div className="space-y-2">
