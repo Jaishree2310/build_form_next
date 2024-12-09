@@ -68,3 +68,9 @@ To get started with the app, follow these steps:
 - **Form Submission**: Shows a success message upon form submission.
 - **Reordering**: Users can reorder the questions in the form.
 - **UI Interactions and Animations**: Includes smooth transitions and animations on UI actions to improve the user experience.
+
+## Demo Video
+
+You can view the demo of the form builder app in action by watching the following video:
+
+[Watch the Demo Video](https://share.vidyard.com/watch/W6KbHPa9AxPStudSPtmRhF?)
