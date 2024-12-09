@@ -29,9 +29,9 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 - ❌ Display submitted forms in a table.
 
 ## Technologies Used
-- **Frontend**: Next.js, TailwindCSS, React
-- **State Management**: (e.g., React State, Context API, Redux)
-- **Form Handling**: React Hook Form (optional but recommended)
+- **Frontend**: Next.js, TailwindCSS, Typescript
+- **State Management**: (e.g., React State, Context API)
+- **Form Handling**: React Hook Form 
 - **CSS**: TailwindCSS for styling
 
 ## Setup and Installation
