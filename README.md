@@ -51,7 +51,7 @@ To get started with the app, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Jaishree2310/form_build.git
+   git clone https://github.com/Jaishree2310/build_form_next.git
    ```
 
 2. Install dependencies:
@@ -79,3 +79,8 @@ To get started with the app, follow these steps:
 - **Form Submission**: Shows a success message upon form submission.
 - **Reordering**: Users can reorder the questions in the form.
 - **UI Interactions and Animations**: Includes smooth transitions and animations on UI actions to improve the user experience.
+- **Different field types**: single, long, radio, url, date
+- **Responsive and accessible UI components**
+- **Form state persistence using localStorage**
+- **Strong type safety with TypeScript**
+
