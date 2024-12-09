@@ -3,6 +3,17 @@
 ## Task
 The task is to create a Next.js app for a form builder. The designs and workflow are available in this [Figma file](https://www.figma.com/design/8i2pcM7z0jQc0BIUsdEWR5/Assignment-%E2%80%93-Front-End-Dev).
 
+## Demo Video
+
+You can view the demo of the form builder app in action by watching the following video:
+
+[Watch the Demo Video](https://share.vidyard.com/watch/W6KbHPa9AxPStudSPtmRhF?)
+
+## Live Project
+
+[Live Link](https://build-form-next.vercel.app/)
+
+
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
@@ -68,9 +79,3 @@ To get started with the app, follow these steps:
 - **Form Submission**: Shows a success message upon form submission.
 - **Reordering**: Users can reorder the questions in the form.
 - **UI Interactions and Animations**: Includes smooth transitions and animations on UI actions to improve the user experience.
-
-## Demo Video
-
-You can view the demo of the form builder app in action by watching the following video:
-
-[Watch the Demo Video](https://share.vidyard.com/watch/W6KbHPa9AxPStudSPtmRhF?)
