@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Peerlist Frontend Developer Assignment
+
+## Task
+The task is to create a Next.js app for a form builder. The designs and workflow are available in this [Figma file](https://www.figma.com/design/8i2pcM7z0jQc0BIUsdEWR5/Assignment-%E2%80%93-Front-End-Dev).
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Requirements Checklist
 
-## Learn More
+- ✅ Implement the UI for an empty form creation step, allowing users to select input types and add questions.
+- ✅ Implement the following 5 question types:
+  - ✅ Short answer
+  - ✅ Long answer
+  - ✅ Single select
+  - ✅ Number
+  - ✅ URL
+- ✅ Allow users to save the form and display a preview of the created form.
+- ✅ Allow users to fill out the form and show form completeness (percentage of fields filled).
+- ✅ Display a success message upon form submission.
 
-To learn more about Next.js, take a look at the following resources:
+### Good to Have (Bonus Points)
+- ✅ Interactions or animations on UI actions.
+- ✅ Functionality to reorder the form questions.
+- ❌ Use API for saving the form data (if applicable).
+- ❌ Display submitted forms in a table.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
+- **Frontend**: Next.js, TailwindCSS, React
+- **State Management**: (e.g., React State, Context API, Redux)
+- **Form Handling**: React Hook Form (optional but recommended)
+- **CSS**: TailwindCSS for styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Setup and Installation
 
-## Deploy on Vercel
+To get started with the app, follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Jaishree2310/form_build.git
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+   This will start the server at [http://localhost:3000](http://localhost:3000).
+
+4. Production Build:
+   To create a production build of the app, run:
+   ```bash
+   npm run build
+   ```
+
+## Features
+
+- **Form Creation**: Allows users to create a custom form by selecting from various question types such as short answer, long answer, single select, number, and URL.
+- **Form Preview**: Provides a preview of the created form.
+- **Form Completion**: Displays the percentage of fields filled as the user completes the form.
+- **Form Submission**: Shows a success message upon form submission.
+- **Reordering**: Users can reorder the questions in the form.
+- **UI Interactions and Animations**: Includes smooth transitions and animations on UI actions to improve the user experience.
