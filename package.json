@@ -1,5 +1,5 @@
 {
-  "name": "peerlist-challenge",
+  "name": "build_form_next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,12 +19,12 @@
     "@radix-ui/react-progress": "^1.1.0",
     "@radix-ui/react-select": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.0",
+    "build_form_next": "file:",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
     "next": "13.5.7",
     "next-images": "^1.8.5",
-    "peerlist-challenge": "file:",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.53.2",
